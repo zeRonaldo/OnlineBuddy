@@ -1,0 +1,112 @@
+/* ===============COLORS================*/
+/* CSS Document */
+body, td, th, p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333;
+  line-height: 1.5; }
+
+body {
+  background-color: #fdfdfd;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+ul, li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #333; }
+
+a {
+  color: #28DF7D;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #EF7587;
+  text-decoration: none; }
+
+a img {
+  border: none 0px #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 20px; }
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  background-color: #333;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .navigation ul {
+    padding: 0; }
+  .navigation .logo {
+    list-style: none;
+    min-height: 40px;
+    background-image: url("../res/img/logo.png");
+    min-width: 40px;
+    background-position: center;
+    background-size: cover; }
+
+header {
+  margin: 0;
+  text-align: center;
+  padding: 15px 0;
+  font-family: serif;
+  background-color: #444;
+  color: #ccc;
+  text-shadow: white; }
+  header h1 {
+    margin: 0;
+    padding: 0; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  .main .users, .main .games {
+    background-color: #eee;
+    padding: 25px 15px;
+    min-width: 30vw;
+    border-radius: 5px;
+    text-align: center;
+    margin: 25px 12.5px; }
+    .main .users ul, .main .games ul {
+      padding: 0; }
+      .main .users ul li, .main .games ul li {
+        list-style: none;
+        font-weight: bold; }
+
+footer {
+  text-align: center;
+  background: #ccc; }
+  footer p {
+    color: #453959; }

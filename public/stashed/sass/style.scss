@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* ===============COLORS================*/
+$verde : #28DF7D;
+$rosa : #EF7587;
+$azul: #30A9DF;
+$roxo-escuro: #3B3251;
+$roxo: #453959;
+$cinza-escuro: #333;
+$cinza: #ccc;
+
+/* CSS Document */
+
+body,td,th,p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: $cinza-escuro;
+	line-height: 1.5;
+}
+body {
+	background-color: #fdfdfd;
+	margin: 0;
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+ul, li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: $cinza-escuro;
+}
+a {
+	color: $verde;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: $rosa;
+	text-decoration: none;
+}
+a img{
+	border: none 0px #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 20px;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+.navigation{
+    display: flex;
+    width: 100vw;
+    background-color: $cinza-escuro;
+    align-content: center;
+    justify-content: center;
+
+    ul{
+    	padding: 0;
+	}
+
+    .logo{
+    	list-style: none;
+    	min-height: 40px;
+    	background-image: url("../res/img/logo.png");
+		min-width: 40px;
+		background-position: center;
+		background-size: cover;
+	}
+
+}
+
+header{
+
+    margin: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-family: serif;
+    background-color: #444;
+    color: $cinza;
+    text-shadow: white;
+
+    h1{
+    	margin: 0;
+    	padding:0;
+    }
+
+}
+
+.main{
+	
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+
+    .users,.games{
+    	background-color: #eee;
+		padding: 25px 15px;
+		min-width: 30vw;
+		border-radius: 5px;
+		text-align: center;
+		margin: 25px 12.5px;
+
+		ul{
+			padding:0;
+
+			li{
+				list-style: none;
+				font-weight: bold
+			}
+		}
+    }
+}
+
+footer{
+	
+
+    text-align: center;
+    background: $cinza;
+    
+
+    p{
+    	color: $roxo;
+    }
+}
